@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(73, 61, 66);
+    color: pink;
+}
+
+
+.header{
+    background-color: rgb(238, 164, 6);
+    color: rgb(197, 10, 10);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+
+}
