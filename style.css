@@ -1,14 +1,448 @@
-body{
-    background-color: rgb(73, 61, 66);
-    color: pink;
+/* thanks for all your help
+tetcher :)  from magdi salih
+thanks for Alight coding School Rwanda Mahama  */
+/* this for all page  */
+body {
+
+  background-color: rgb(73, 61, 66);
+  color: rgb(154, 55, 72);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+/* this for header page  */ 
+.magdi {
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 20px;
+} 
+.magdi span {
+  color: rgb(5, 22, 253);
+}
+/* this for header page  */ 
+.header {
+  z-index: 1000;
+  /* display: flex; */
+  position: fixed;
+  top: 0;
+  /* left: 40; */
+  width:100%; 
+  display: flex;
+  /* text-align: center; */
+  padding: 20px;
+  margin: auto;
+  font-size: 20px;
+  align-items: center;
+  /* font-weight: 60px; */
+ 
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.835); 
+   
+  background: linear-gradient(to right,
+      rgb(224, 75, 6), rgb(202, 168, 168)); 
 
 
-.header{
-    background-color: rgb(238, 164, 6);
-    color: rgb(197, 10, 10);
-    text-align: center;
-    padding: 20px;
-    border-radius: 20px;
+}
+/* this for home page  */
+#home {
+   background: linear-gradient(to right, #3a6772, #bdb654);
+  display: flex;
+  /* padding: 50px; */
+  /* text-align: center; */
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
 
+}
+/* this for nav bar  */ 
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+/* this for nav bar hover  */ 
+nav a:hover {
+  color: #32393a;
+  transform: scale(1.1);
+  transition: 0.2s;
+  /* border: 1px solid rgb(231, 191, 14); */
+}
+/* this for login and signup button  */
+div.in-up a {
+  text-decoration: none;
+  color: #fff;
+margin-right: 80px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+/* this for login and signup button hover  */ 
+div.in-up a:hover {
+  color: #00e1ff;
+  transform: scale(1.1);
+  transition: 0.2s;
+
+
+
+}
+/* this for home page image  */ 
+.pic img {
+    margin-left: 500px;
+    width: 350px;
+  height: 420px;
+  border-radius: 60px 10px 20px 1px;
+  object-fit: cover;
+}
+/* this for home page text  */
+section h1 {
+  /* width: 10%; */
+  font-size: 50px;
+  margin-left: 100px;
+  color: #ff6200;
+  text-shadow: 2px 2px 4px #060606;
+}
+/* this for home page text hover  */ 
+section h1:hover {
+  color: #246169;
+  transform: scale(1.1);
+  transition: 0.2s;
+  /* border: 1px solid rgb(231, 191, 14); */
+
+}
+ /* this for about me page  */ 
+#About-me {
+  background-color: #946651;
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+
+} 
+/* this for about me page text  */ 
+#About div p  {
+  margin-left: 100px;
+  display: flex;
+  color: black;
+  /* background-color: seashell; */
+  background: linear-gradient(to right, #fff, #ff8401 );
+  padding: 60px;
+  width: 70%;
+  border-radius: 30px;
+  border: solid 5px rgb(255, 255, 255);
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #4e4646;
+}
+/* this for services page */ 
+#Services {
+  background-color: #965638;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+/* this for services box  */ 
+.box-services {
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+  margin: 20px;
+  margin-right: 99px;
+  width: 240px;
+  height: 300px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: #0b0b0b;
+  background: linear-gradient(to right, #ef7605, #d1d1d1);
+  /* background-color: rgb(209, 105, 31); */
+  text-shadow: 2px 2px 4px #474141;
+  border: solid 5px rgb(255, 252, 252);
+}
+/* this for services box hover  */ 
+.box-services:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background: #ced0d3;
+  border: 5px solid rgb(99, 82, 115);
+}
+/* this for skills page  */
+#Skills {
+  background: linear-gradient(to right, #d87111, #2d221d);
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+
+}
+/* this for contact page */
+#Contact {
+  background-color: #f3eaea;
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+
+}
+/* this for contact page text  */ 
+.contact-info {
+  margin-left: 100px;
+  display: flex;
+  color: black;
+   background-color: seashell; 
+  background: linear-gradient(to right, #fff, #ff8401 );
+  padding: 60px;
+  width: 70%;
+  border-radius: 30px;
+  border: solid 5px rgb(255, 255, 255);
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #4e4646;
+}
+/* this for contact page h2  */ 
+.contact-info h2 {
+  font-size: 40px;
+  color: #f47107;
+  text-shadow: 2px 2px 4px #474141;
+  font-style: italic;
+}
+/* this for contact page p  */ 
+.contact-info  {
+  align-items: center;
+display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  font-style: italic;
+
+}
+/* this for contact page a  */ 
+.contact-info a {
+  align-items: center;
+display: inline-block;
+  text-decoration: none;
+  color: #2d3db4;
+  margin: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+
+}
+/* this for blog page */
+#blog{
+background-color: #965638;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+/* this for bloss css  */
+ .blogs{
+  padding: 0;
+  display: flex;
+  gap: ;
+  margin: 20px;
+  margin-right: 99px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #000000;
+  background: linear-gradient(to right, #f7f6f5, #b02222);
+  /* background-color: rgb(209, 105, 31); */
+  text-shadow: 2px 2px 4px #474141;
+  border: solid 5px rgb(255, 252, 252);
+}
+/* this for login and signup page */
+#Login {
+  background-color: #285c69;
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+
+}
+/* this for login form  */
+.Login-form {
+  
+  margin-left: 200px;
+  padding: 10px;
+  width: 700px;
+  height: 400px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ef7605, #d1d1d1);
+  text-shadow: 2px 2px 4px #474141;
+  border: solid 5px rgb(255, 252, 252);
+
+  
+}
+/* this for login form input  */
+#Login h2 {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  margin-top: 10px;
+  background: linear-gradient(to right, #fff, #ff8401 );
+  border-radius: 20px;
+border: double #6a6967 ;
+  color: #f47107;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #474141;
+  font-style: italic;
+}
+.Login-form .user {
+  align-items: center;
+  font-size: 27px;
+  font-weight: bold;
+  color: #000000;
+  font-style: italic;
+
+}
+.Login-form .in {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 2px rgb(255, 247, 247);
+  background-color: burlywood;
+ 
+}
+/* this for login form submit button  */ 
+.Login-form input[type="submit"] {
+  width: 20%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  border: solid 2px rgb(0, 0, 0);
+  font-size: 20px;
+  background-color: #246169;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+/* this for login form submit button hover  */ 
+.Login-form input[type="submit"]:hover {
+  background-color: #ff7b00;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+/* this for login form submit button  */
+.Login-form a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+/* this for login form submit button hover  */
+.Login-form a:hover {
+  color: #00e1ff;
+  transform: scale(1.1);
+  transition: 0.2s;
+} 
+/* this for signup page  */
+#Sign-up {
+  background-color: #246169;
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+
+}
+/* this for signup */
+.Signup {
+  margin-left: 200px;
+  padding: 10px;
+  width: 700px;
+  height: 400px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ef7605, #d1d1d1);
+  text-shadow: 2px 2px 4px #474141;
+  border: solid 5px rgb(255, 252, 252);
+  box-shadow:  0 4px 8px rgba(243, 7, 7, 0.835);
+ }
+/* this for Signup logo h2*/
+ .Signup h2 {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  margin-top: 10px;
+  font-style: italic;
+  background: linear-gradient(to right, #fff, #ff8401 );
+  border-radius: 20px;
+border: double #6a6967 ;
+  color: #f47107;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #474141
+}
+/* this for signup form user */
+.Signup .user {
+  align-items: center;
+  font-size: 27px;
+  font-weight: bold;
+  color: #000000;
+  font-style: italic;
+
+}
+/* this for signup form input */
+.Signup .in {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 2px rgb(255, 247, 247);
+  background-color: burlywood;
+ 
+}
+/* this for signup form submit button */ 
+.Signup input[type="submit"] {
+  width: 20%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;  
+  border: solid 2px rgb(0, 0, 0);
+  font-size: 20px;
+  background-color: #246169;
+  color: white;
+  font-weight: bold; 
+  font-style: italic;
+}
+/* this for signup form submit button hover */ 
+.Signup input[type="submit"]:hover {
+  background-color: #ff7b00;
+  transform: scale(1.1);
+  transition: 0.2s;
+  background-color: blue;
+}
+/* this for signup form submit button */ 
+.Signup a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+/* this for signup form submit button hover */ 
+.Signup a:hover {
+  color: #00e1ff;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
