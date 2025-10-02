@@ -20,6 +20,7 @@ body {
   font-size: 10px;
   align-items: center;
   width:99%;
+  height: 70px;
   margin: 0px;
 border-radius: 10px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.835);
@@ -120,6 +121,8 @@ section h1:hover {
 
 /* this for about me page text  */
 #About div p {
+  display: flex;
+  align-items: center;
   margin: auto;
   display: flex;
   color: black;
@@ -129,12 +132,13 @@ section h1:hover {
   width: 70%;
   border-radius: 20px;
   border: solid 5px rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: 2px 2px 4px #4e4646;
 }
 
 /* this for services page */
 #Services {
+  flex-wrap: wrap;
   background-color: #965638;
   display: flex;
   align-items: center;
@@ -261,6 +265,7 @@ section h1:hover {
 
 /* this for blog page */
 #blog {
+  flex-wrap: wrap;
   background-color: #965638;
   display: flex;
   justify-content: space-evenly;
@@ -358,8 +363,9 @@ section h1:hover {
 
 /* this is for blog a */
 #blog a {
+
   display: flex;
-  position: absolute;
+
   margin: 50px;
   text-decoration: none;
   font-size: 30px;
@@ -740,7 +746,7 @@ section h1:hover {
 
 .footer {
   display: flex;
-  position: fixed;
+ position: -ms-page;
   bottom: 0;
   width: 100%;
   height: 20px;
