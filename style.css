@@ -381,8 +381,6 @@ section h1:hover {
   background-color: #285c69;
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* padding: 50px; */
   text-align: center;
   width: 100%;
   min-height: 100vh;
@@ -670,31 +668,22 @@ section h1:hover {
   }
 }
 
-/* Navbar styles */
-.navbar {
-  display: flex;
-  align-items: center;
-  background: transparent;
-  position: relative;
-  width: 100%;
-}
-
 /* this is for logo */
-.menu-btn {
+ .menu-btn {
   display: none;
   font-size: 2em;
   cursor: pointer;
   margin-left: auto;
   padding: 10px;
-}
+} 
 
 /* this is for nav bar input */
-.navbar input[type="checkbox"] {
+ .navbar input[type="checkbox"] {
   display: none;
-}
+} 
 
 /* this is for nav bar links */
-.navbar .nav-links {
+.navbar .nav-links  {
   display: flex;
   list-style: none;
   margin: 0;
@@ -702,14 +691,14 @@ section h1:hover {
 }
 
 /* this is for nav bar links li */
-.navbar .nav-links li {
+/* .navbar .nav-links  {
   margin: 0 10px;
-}
+} */
 
 /* this is for nav bar links a */
 .navbar .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #080808;
   font-weight: bold;
   font-style: italic;
   font-size: 20px;
@@ -723,21 +712,25 @@ section h1:hover {
 }
 
 /* this is for nav bar links a active */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .navbar .nav-links {
     flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
-    background: linear-gradient(to right, rgb(224, 75, 6), rgb(202, 168, 168));
+    background: linear-gradient(to right, rgb(22, 171, 216), rgb(201, 132, 30));
     display: none;
-    z-index: 999;
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
   }
+  #menu-toggle:checked ~ .nav-links{
+        display: flex;
+      }
 
-  .navbar input[type=\"checkbox\"]:checked~.nav-links {
+  /* .navbar input[type=\"checkbox\"]:checked~.nav-links {
     display: flex;
-  }
+  } */
 
   .menu-btn {
     display: block;
