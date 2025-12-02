@@ -10,29 +10,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <section id="Sign-up">
-          <div class="Signup">   
-            <!-- <a href="./index.html"></i>HOME PAGE<i class="fa-solid fa-house-chimney"></i></a> -->
-              <form action="">
-                        <h2>Sign up</h2>
-                        <label class="user" for="username">Username:</label>
-                        <input class="in" type="text" id="username" name="username" placeholder="Enter your name" required><br>
-
-                        <label class="user" for="email">Email:</label>
-                        <input class="in" type="email" id="email" name="email" placeholder="Enter your Email" required><br>
-
-                        <label class="user" for="password">Password:</label>
-                        <input class="in" type="password" id="password" name="password" required placeholder="Enter your password">
-                        <p><a href="./Login.html">Already have an account? Login</a></p>
-                        <p><a href="./index.html">Back to Home</a></p>  
-                        <input type="submit" value="Sign Up">
-
-                       
-                    </form>
-             
+      <!-- Signup Page (Separate) -->
+        <section id="signup-page">
+            <div class="signup-page-container">
+                <a href="#home" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>Magdi Salih</span>
+                </a>
+                <h1>Create Your Account</h1>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="form-btn">Create Account</button>
+                    <div class="form-links">
+                        <a href="#login-page">Already have an account? Login</a>
+                    </div>
+                </form>
+                <a href="#home" class="back-to-home">
+                    ← Back to Home
+                </a>
             </div>
-
-            
         </section>
+    </main>
+
 </body>
 </html>
